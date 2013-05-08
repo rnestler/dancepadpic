@@ -23,4 +23,8 @@
 *.pre
 *.obj
 *.as
+*.dep
+*.hex
+*.tmp
+*.p1
 funclist
