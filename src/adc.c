@@ -15,14 +15,14 @@ void adc_initialize()
 	// ADC channel select
 	ADCON0bits.CHS = 0;
 
+	ADCON2bits.ADFM = 1;
+
 	// ADC aqquisition time
 	ADCON2bits.ACQT0 = 1;
 	ADCON2bits.ACQT1 = 0;
 	ADCON2bits.ACQT2 = 0;
 
 	ADCON0bits.ADON = 1;
-
-
 }
 
 unsigned short adc_busy_read()
